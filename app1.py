@@ -51,7 +51,7 @@ def login():
 @app.route('/home')
 def home():
     if 'username' in session:
-        return render_template('designcoffee.html')  # Show home page if logged in
+        return render_template('index.html')  # Show home page if logged in
     else:
         return redirect(url_for('login'))  # Redirect to login page if not logged in
 
