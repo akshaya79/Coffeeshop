@@ -150,5 +150,13 @@ color:orange;
   </div>
   <h1 style="color:white;text-align:center;margin-top:100px;">Welcome to Infinity ☕</h1>
   <p style="color:white;text-align:center;">Redirecting to registration in 5 seconds...</p>
+  <form id="registerForm" onsubmit="goToLoginPage(); return false;">
+    <input type="submit" value="Register">
+  </form>
+  <script>
+    function goToLoginPage() {
+      window.location.href = "login.html";
+    }
+  </script>
 </body>
 </html>
